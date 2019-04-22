@@ -4,7 +4,7 @@
 
 ### API [here](https://api-lambda-notes.herokuapp.com/)
 
-### API source [here](https://github.com/jsmnglng/back-end-project-week)
+### API source [here](https://github.com/jsmnglng/lambda-notes-server)
 
 This week you will be building a minimum viable product (MVP) for a note taking app called "Lambda Notes."
 
