@@ -14,7 +14,11 @@ class ListView extends Component {
   }
 }
 
-const mapStateToProps = ({ notes }) => ({ notes });
+const mapStateToProps = ({ notesReducer }) => {
+  return {
+    notes: notesReducer.notes
+  };
+};
 
 export default connect(
   mapStateToProps,

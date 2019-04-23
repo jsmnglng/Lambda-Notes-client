@@ -27,7 +27,7 @@ class SingleNoteView extends Component {
   };
 
   render() {
-    const note = this.props.notes;
+    const note = this.props.note;
 
     if (note) {
       return (
@@ -45,9 +45,9 @@ class SingleNoteView extends Component {
   }
 }
 
-const mapStateToProps = ({ notes }) => {
+const mapStateToProps = ({ notesReducer }) => {
   return {
-    notes
+    note: notesReducer.note
   };
 };
 
