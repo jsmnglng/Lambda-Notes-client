@@ -12,7 +12,7 @@ import {
 const URL = "https://api-lambda-notes.herokuapp.com/api/notes";
 
 // Fetch all notes
-export const getNotes = () => async dispatch => {
+export const getAllNotes = () => async dispatch => {
   try {
     const res = await axios.get(URL);
     dispatch({ type: GET_ALL_NOTES, payload: res.data });
@@ -22,7 +22,7 @@ export const getNotes = () => async dispatch => {
 };
 
 // Fetch single note
-export const getNote = id => async dispatch => {
+export const getSingleNote = id => async dispatch => {
   try {
     const res = await axios.get(`${URL}/${id}`);
     dispatch({ type: GET_SINGLE_NOTE, payload: res.data });

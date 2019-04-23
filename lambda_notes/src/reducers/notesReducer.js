@@ -11,6 +11,8 @@ export const notesReducer = (state = [], action) => {
   switch (action.type) {
     case GET_ALL_NOTES:
       return action.payload;
+    case GET_SINGLE_NOTE:
+      return action.payload;
     case ERROR:
       return action.payload;
     default:
