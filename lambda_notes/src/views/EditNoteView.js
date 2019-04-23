@@ -41,7 +41,6 @@ class EditNoteView extends Component {
 
   render() {
     const note = this.props.note;
-    console.log("RENDER note", note);
 
     return (
       <EditNote

@@ -19,7 +19,6 @@ class ListView extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log("STATE from ListView", state);
   return {
     notes: state.notes,
     gettingNotes: state.gettingNotes,

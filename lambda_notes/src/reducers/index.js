@@ -12,7 +12,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  console.log("ACTION PAYLOAD", action.payload);
   switch (action.type) {
     case actionTypes.GETTING_NOTES:
       return { ...state, gettingNotes: true };
